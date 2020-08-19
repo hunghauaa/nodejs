@@ -5,4 +5,7 @@ a(href="/") home
 a(href="/users/create")
 ul  
     each user in users
-        li=user.name
+        li
+            span=user.name  
+            span &nbsp
+            a(href="/users/view/"+user.id) view
