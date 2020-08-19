@@ -1,0 +1,8 @@
+form(action="/users/search")
+    input(type="text",name="q",value=values)
+    button search
+a(href="/") home
+a(href="/users/create")
+ul  
+    each user in users
+        li=user.name
